@@ -10,7 +10,7 @@ def nao_entre_em_panico():
     anterior = 0
     limite = 98
     found = 0
-    resposta = "1,"
+    resposta = "1,\n"
     while (found < limite):
         tmp = proximo
         proximo = proximo + anterior
