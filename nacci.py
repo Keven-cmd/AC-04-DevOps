@@ -18,7 +18,7 @@ def nao_entre_em_panico():
         found = found+1
         resposta+= str(proximo) + ","
         
-    return resposta
+    return resposta \n
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
