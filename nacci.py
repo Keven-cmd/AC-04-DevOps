@@ -7,16 +7,16 @@ app = Flask(__name__)
 @app.route('/')
 def nao_entre_em_panico():
     proximo = 1
-    anterior = 1
-    limite = 99
+    anterior = 0
+    limite = 98
     found = 0
-    resposta = "0,"
+    resposta = "1,"
     while (found < limite):
         tmp = proximo
         proximo = proximo + anterior
         anterior = tmp
         found = found+1
-        resposta+= str(proximo) + ","
+        resposta+= str(proximo) + ",\n"
         
     return resposta
 
